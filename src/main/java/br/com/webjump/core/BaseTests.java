@@ -2,6 +2,7 @@ package br.com.webjump.core;
 
 import br.com.webjump.basepage.HomePage;
 import br.com.webjump.basepage.QuadroIframeFieldsPage;
+import br.com.webjump.util.ScreenShot;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -23,6 +24,7 @@ public class BaseTests {
 
     @AfterEach
     public void finaliza() {
+        ScreenShot.capturarEvidencias();
         killDriver();
     }
 

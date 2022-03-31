@@ -4,6 +4,7 @@ import br.com.webjump.basepage.QuadroButtonsPage;
 import br.com.webjump.basepage.QuadroIframeFieldsPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,8 +16,13 @@ public class BasePage {
 
     //Metodo para clicar em elementos utilizando Xpath
     public void clicarBotao(String botao) {
-        getDriver().findElement(By.id(botao)).click();
-
+        WebElement clicarNoBotao = getDriver().findElement(By.id(botao));
+        WebDriverWait webDriverWait = new WebDriverWait(getDriver(), 10);
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(clicarNoBotao));
+        Actions action = new Actions(getDriver());
+        WebElement we = getDriver().findElement(By.id(botao));
+        action.moveToElement(we).build().perform();
+        clicarNoBotao.click();
     }
 
     //Metodo para selecionar Frame
