@@ -1,7 +1,8 @@
 package br.com.webjump.core;
 
 import br.com.webjump.basepage.HomePage;
-import org.junit.jupiter.api.AfterAll;
+import br.com.webjump.basepage.QuadroIframeFieldsPage;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
 import static br.com.webjump.core.DriveFactory.getDriver;
@@ -10,9 +11,8 @@ import static br.com.webjump.core.DriveFactory.killDriver;
 
 public class BaseTests {
 
-
     protected HomePage homePage;
-
+    protected QuadroIframeFieldsPage quadroIframeFieldsPages;
 
     @BeforeEach
     public void carregarPaginaInicial() {
@@ -20,10 +20,10 @@ public class BaseTests {
 
     }
 
-    @AfterAll
-    public static void finaliza() {
+
+    @AfterEach
+    public void finaliza() {
         killDriver();
     }
-
 
 }
