@@ -36,4 +36,8 @@ public class QuadroIframeFieldsPage extends BasePage {
        escreverTextoNoIframeFields("first_name", texto);
     }
 
+    public void validarImagemSelenium() {
+        validarImagemDoSeleniumNaTela("//*[@id=\"panel_body_three\"]/img[4]");
+    }
+
 }

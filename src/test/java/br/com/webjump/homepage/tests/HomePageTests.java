@@ -79,6 +79,9 @@ public class HomePageTests extends BaseTests {
         // Selecionando o exempleTwo
         quadroIframeFieldsPages.selecionarExemplos("ExampleTwo");
 
+        // Validar imagem selenium
+        quadroIframeFieldsPages.validarImagemSelenium();
+
 
     }
 }

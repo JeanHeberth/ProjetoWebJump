@@ -31,6 +31,7 @@ public class BasePage {
         WebElement selecionaExemplo = getDriver().findElement(By.id(id_campoSelecionado));
         Select combo = new Select(selecionaExemplo);
         combo.selectByVisibleText(valor);
+        getDriver().switchTo().parentFrame();
 
     }
 
@@ -65,5 +66,10 @@ public class BasePage {
     public void validarBotaoInexistenteDoBotao(String validarInexistencia) {
         WebDriverWait webDriverWait = new WebDriverWait(getDriver(), 60);
         webDriverWait.until(ExpectedConditions.invisibilityOfElementLocated(By.id(validarInexistencia)));
+    }
+
+    //Metodo para validar a imagem do selenium
+    public void validarImagemDoSeleniumNaTela(String validarImagem) {
+        getDriver().findElement(By.xpath(validarImagem)).isDisplayed();
     }
 }
