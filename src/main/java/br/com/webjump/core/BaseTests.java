@@ -24,7 +24,7 @@ public class BaseTests {
 
     @AfterEach
     public void finaliza() {
-        ScreenShot.capturarEvidencias();
+        ScreenShot.takeScreenShot(getDriver());
         killDriver();
     }
 

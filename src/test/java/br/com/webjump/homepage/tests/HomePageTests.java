@@ -13,7 +13,7 @@ public class HomePageTests extends BaseTests {
     QuadroIframeButtonsPage quadroIframeButtonsPage;
     QuadroIframeFieldsPage quadroIframeFieldsPages;
 
-    @RepeatedTest(5)
+    @RepeatedTest(3)
     public void clicarNoBotaoOneTwoFourDoQuadroButtons() {
         //Verificando se a janela está na pagina principal
         quadroButtonsPage = homePage.validarCaixaButtonsDaPaginaPrincipal();
@@ -31,7 +31,7 @@ public class HomePageTests extends BaseTests {
     }
 
 
-    @RepeatedTest(5)
+    @RepeatedTest(3)
     public void clicarNoBotaoOneTwoFourDoQuadroIframeButtons() {
 
 
@@ -55,7 +55,7 @@ public class HomePageTests extends BaseTests {
     }
 
 
-    @RepeatedTest(5)
+    @RepeatedTest(3)
     public void preencherTourFirstName_clicarNoBotaoOne_checarOptionThree_selecionarExampleTwo() {
 
         //Verificando se a janela está na pagina principal
