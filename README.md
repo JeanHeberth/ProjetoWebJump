@@ -30,3 +30,14 @@ chrome com padrão, porém já está salvo os outros três navegadores utilizado
 ![img_2.png](img_2.png "Clique aqui para ver em imagem.")
 
 
+<h3>JDK</h3>
+
+Caso não tenha a jdk configurada, altere as configurações do jdk do projeto clonado, e seleciona a
+jdk que vc tenha em sua máquina. Ps. Utilizei a jdk 1.8_241
+
+![img_3.png](img_3.png "Clique aqui para ver em imagem.")
+
+
+Após esses passos é só rodar a classe HomePageTests, que está dentro do src/test/java/br.com.webjump.homepage
+
+![img_4.png](img_4.png "Clique aqui para ver em imagem.")
