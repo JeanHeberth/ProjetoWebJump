@@ -12,6 +12,7 @@ Faça o clone do projeto para a sua máquina, e abra-o em sua ide de preferênci
 
 <h3>Intellij</h3>
 Abra o projeto clonado na ide Intellij, abra a aba do Maven que fica no lado direito da IDE, e clique na opção Reload All Projects Maven, que está localizado no menu superior dentro da aba Maven.
+
 ![img.png](img.png "Clique aqui para ver em imagem.")
 
 <h3>Eclipse</h3>
@@ -26,6 +27,6 @@ Para esse projeto, não será necessário setar o drive do navegador na configur
 de acordo com sua necessidade. Caso deseje alterar o navegador, acesse a classe Propriedades e selecione o navegador desejado, já está configurado para o sistema reconhecer o navegador 
 chrome com padrão, porém já está salvo os outros três navegadores utilizados para testes, IE, EDGE, Firefox, sendo assim, é so escolher.
 
-<img alt="Como_selecionar_navegador.png" src="img_2.png" title="Clique aqui para ver em imagem."/>
+![img_2.png](img_2.png "Clique aqui para ver em imagem.")
 
 
