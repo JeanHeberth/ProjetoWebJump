@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import static br.com.webjump.util.Constantes.BASE_URI;
+import static br.com.webjump.util.ScreenShot.takeScreenShot;
 import static java.time.Duration.ofSeconds;
 
 public class BrowserConfig {
@@ -27,12 +28,8 @@ public class BrowserConfig {
     }
 
     public void tearDown(WebDriver driver) {
+        takeScreenShot(driver);
         driver.manage().deleteAllCookies();
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         driver.quit();
     }
 }
