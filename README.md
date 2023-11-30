@@ -1,5 +1,5 @@
 # ProjetoWebJump
-Esse projeto foi desenvolvido para o teste da empresa Webjump.
+Esse projeto foi desenvolvido para o teste e estudos.
 
 Para criação desse projeto foi utilizado a ide Intellij e framework's Selenium, Junit 5 e a Hamecrest.
 
