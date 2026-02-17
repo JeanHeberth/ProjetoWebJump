@@ -10,8 +10,10 @@ public class QuadoFrameFieldsElements extends BaseElements {
     public QuadoFrameFieldsElements(WebDriver driver) {
         super(driver);
     }
+
     @FindBy(xpath = "//*[@id=\"iframe_panel_body_two\"]/iframe")
     protected WebElement escolheIframeFields;
+
     @FindBy(xpath = "//*[@id=\"iframe_panel_body\"]/iframe")
     protected WebElement escolheIframeButtons;
 
